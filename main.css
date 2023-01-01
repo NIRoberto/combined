@@ -1,0 +1,71 @@
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 4rem;
+  /* justify-content: center; */
+}
+
+main {
+  background-color: rgb(46, 45, 45);
+}
+
+main .btn button {
+  background-color: blue;
+  outline: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 1rem  ;
+  padding: 14px 22px;
+  border-radius: 5px;
+}
+
+.inactive {
+  display: none;
+}
+
+.active {
+  display: flex;
+}
+
+main .calc {
+  background-color: rgb(24, 23, 23);
+  padding: 2px;
+  width: 100%;
+}
+main  .calc input {
+    width: 100%;
+    padding: 3rem 1rem;
+    color: white;
+    outline: none;
+    background-color: rgb(24, 23, 23);
+}
+main .calc .btns {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 0.3rem;
+}
+
+main .calc .btns button {
+    color: white;
+    border-radius: 2px;
+    padding: 1.3rem;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: rgb(46, 45, 45);
+    border: none;
+
+
+}

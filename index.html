@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assigned work on JavaScript, HTML,CSS</title>
+    <link rel="stylesheet" href="/main.css" />
+  </head>
+  <body>
+    <main>
+      <div class="btn">
+        <button id="calc">Calculator App</button>
+        <button id="todo">Todo App</button>
+      </div>
+      <div>
+        <form name="form" class="calc">
+          <div>
+            <input type="text" value="" name="result" class="output" />
+          </div>
+          <div class="btns">
+            <button
+              type="button"
+              onclick="form.result.value += form.result.value !='' && ( form.result.value.charAt(Number(form.result.value.length)-1)!='/'&& form.result.value.charAt(Number(form.result.value.length)-1)!='%'&& form.result.value.charAt(Number(form.result.value.length)-1)!='*'&& form.result.value.charAt(Number(form.result.value.length)-1)!='-'&& form.result.value.charAt(Number(form.result.value.length)-1)!='+')?'%':''"
+            >
+              %
+            </button>
+            <button
+              type="button"
+              onclick="form.result.value=form.result.value = `${Math.sin(form.result.value,2)}`"
+            >
+              sin
+            </button>
+            <button
+              type="button"
+              onclick="form.result.value=form.result.value = `${Math.cos(form.result.value,2)}`"
+            >
+              cos
+            </button>
+            <button
+              type="button"
+              onclick="form.result.value= form.result.value.slice(0,Number(form.result.value.length-1))"
+            >
+              Del
+            </button>
+            <button
+              type="button"
+              onclick="form.result.value=eval(`1/${form.result.value !=0?form.result.value:'Not possible'}`)"
+            >
+              1/x
+            </button>
+            <button
+              type="button"
+              onclick="form.result.value=form.result.value = `${Math.pow(form.result.value,2)}`"
+            >
+              x <sup>2</sup>
+            </button>
+            <button
+              type="button"
+              onclick="form.result.value=form.result.value = `${Math.sqrt(form.result.value)}`"
+            >
+              &#8730; x
+            </button>
+            <button
+              type="button"
+              onclick="form.result.value += form.result.value !='' && ( form.result.value.charAt(Number(form.result.value.length)-1)!='/'&& form.result.value.charAt(Number(form.result.value.length)-1)!='*'&& form.result.value.charAt(Number(form.result.value.length)-1)!='-'&& form.result.value.charAt(Number(form.result.value.length)-1)!='+')?'/':''"
+            >
+              /
+            </button>
+            <button type="button" onclick="form.result.value +='7'">7</button
+            ><button type="button" onclick="form.result.value +='8'">8</button>
+            <button type="button" onclick="form.result.value +='9'">9</button>
+            <button
+              type="button"
+              onclick="form.result.value += form.result.value !='' &&( form.result.value.charAt(Number(form.result.value.length)-1)!='/'&& form.result.value.charAt(Number(form.result.value.length)-1)!='*'&&form.result.value.charAt(Number(form.result.value.length)-1)!='-'&& form.result.value.charAt(Number(form.result.value.length)-1)!='+')?'*':''"
+            >
+              *
+            </button>
+            <button type="button" onclick="form.result.value +='4'">4</button
+            ><button type="button" onclick="form.result.value +='5'">5</button
+            ><button type="button" onclick="form.result.value +='6'">6</button>
+            <button
+              type="button"
+              onclick="form.result.value += form.result.value !='' &&( form.result.value.charAt(Number(form.result.value.length)-1)!='/'&& form.result.value.charAt(Number(form.result.value.length)-1)!='*'&&form.result.value.charAt(Number(form.result.value.length)-1)!='-'&& form.result.value.charAt(Number(form.result.value.length)-1)!='+')?'-':''"
+            >
+              -</button
+            ><button type="button" onclick="form.result.value +='1'">1</button
+            ><button type="button" onclick="form.result.value +='2'">2</button
+            ><button type="button" onclick="form.result.value +='3'">3</button
+            ><button
+              type="button"
+              onclick="form.result.value += form.result.value !='' &&( form.result.value.charAt(Number(form.result.value.length)-1)!='/'&& form.result.value.charAt(Number(form.result.value.length)-1)!='*'&& form.result.value.charAt(Number(form.result.value.length)-1)!='-'&& form.result.value.charAt(Number(form.result.value.length)-1)!='+')?'+':''"
+            >
+              +</button
+            ><button
+              type="button"
+              onclick="form.result.value=eval(`-1*${form.result.value}`)"
+            >
+              +/-</button
+            ><button
+              type="button"
+              onclick="form.result.value += form.result.value !='' &&( form.result.value.charAt(Number(form.result.value.length)-1)!='/'&& form.result.value.charAt(Number(form.result.value.length)-1)!='*'&& form.result.value.charAt(Number(form.result.value.length)-1)!='-'&& form.result.value.charAt(Number(form.result.value.length)-1)!='+')?'.':''"
+            >
+              .</button
+            ><button type="button" onclick="form.result.value +='0'">0</button
+            ><button
+              type="button"
+              onclick="form.result.value=eval(form.result.value)"
+            >
+              =
+            </button>
+          </div>
+        </form>
+        <div class="todo">
+          <h1>Todo App</h1>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
