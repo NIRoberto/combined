@@ -5,7 +5,7 @@ let calcBtn = document.querySelector("#calc");
 let todoBtn = document.querySelector("#todo");
 
 window.addEventListener("load", () => {
-  todo.classList.add("inactive");
+  calc.classList.add("inactive");
 });
 
 calcBtn.addEventListener("click", () => {
@@ -15,7 +15,8 @@ calcBtn.addEventListener("click", () => {
   console.log("Hello");
 });
 todoBtn.addEventListener("click", () => {
-  console.log("Hello");
-  todo.style.display = "block";
+  todo.style.display = "flex";
   calc.style.display = "none";
 });
+
+let add  = ""
