@@ -64,7 +64,6 @@ form.addEventListener("submit", (e) => {
         add.style.display = "none";
         editInput.value =
           event.target.parentNode.parentNode.firstElementChild.innerHTML;
-
         editBtn.addEventListener("click", (ev) => {
           ev.preventDefault();
           editInput.style.display = "none";
