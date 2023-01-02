@@ -21,7 +21,7 @@
           <div class="btns">
             <button
               type="button"
-              onclick="form.result.value += form.result.value !='' && ( form.result.value.charAt(Number(form.result.value.length)-1)!='/'&& form.result.value.charAt(Number(form.result.value.length)-1)!='%'&& form.result.value.charAt(Number(form.result.value.length)-1)!='*'&& form.result.value.charAt(Number(form.result.value.length)-1)!='-'&& form.result.value.charAt(Number(form.result.value.length)-1)!='+')?'%':''"
+              onclick="form.result.value = eval(`${form.result.value}/100`)"
             >
               %
             </button>
@@ -39,9 +39,10 @@
             </button>
             <button
               type="button"
-              onclick="form.result.value= form.result.value.slice(0,Number(form.result.value.length-1))"
+              style="color: WHITE; background-color: rgb(139, 13, 13)"
+              onclick="form.result.value= ''"
             >
-              Del
+              AC
             </button>
             <button
               type="button"
@@ -112,19 +113,14 @@
           </div>
         </form>
         <div class="todo">
-          <form action="#">
-            <input type="text" name="Enter samething here..." />
-            <button type="button" id="add">Add</button>
+          <form id="form">
+            <input type="text" class="addInput" id="input" />
+            <input type="text" class="editInput" />
+            <button type="submit" id="add" class="addBtn">Add</button>
+            <button type="submit" class="editBtn">Update</button>
           </form>
-          <div>
-            <div class="singleTodo">
-              <h4>Something</h4>
-              <div>
-                <button id="edit">Edit</button>
-                <button id="del">Delete</button>
-              </div>
-            </div>
-          </div>
+
+          <div class="all"></div>
         </div>
       </div>
     </main>

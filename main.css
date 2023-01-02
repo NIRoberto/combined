@@ -46,7 +46,7 @@ main .calc {
 }
 main .calc input {
   width: 100%;
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
   color: white;
   outline: none;
   background-color: rgb(24, 23, 23);
@@ -60,7 +60,7 @@ main .calc .btns {
 main .calc .btns button {
   color: white;
   border-radius: 2px;
-  padding: 1.3rem;
+  padding: 1rem;
   outline: none;
   cursor: pointer;
   font-weight: bold;
@@ -95,6 +95,11 @@ main .todo form input {
   border: none;
 }
 
+main .todo .all {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
 main .todo .singleTodo {
   padding: 1rem;
   display: flex;
@@ -112,6 +117,10 @@ main .todo .singleTodo button {
   border-radius: 5px;
 }
 
+main .todo #update {
+  display: none;
+}
+
 main .todo .singleTodo h4 {
   color: white;
   font-size: small;
@@ -125,4 +134,22 @@ main .todo #del {
 main .todo #edit {
   color: blue;
   font-size: small;
+}
+
+main .todo #up {
+  background-color: rgb(46, 45, 45);
+  outline: none;
+  border: none;
+  width: 5rem;
+  padding: 6px 12px;
+}
+
+main .todo .update {
+  display: none;
+  width: 60%;
+}
+
+.editInput,
+.editBtn {
+  display: none;
 }
